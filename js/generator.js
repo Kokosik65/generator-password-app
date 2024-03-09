@@ -1,6 +1,5 @@
 const generation = document.getElementById('generation');
 const result = document.getElementById('result');
-const lengthPassword = document.getElementById('lengthPassword');
 
 //slider 
 const slider = document.getElementById("myRange");
@@ -22,7 +21,6 @@ function generationPassword(min, max) {
     }
 
     return ArrayOfString.join('');
-
 }
 
 generation.onclick = function() {
