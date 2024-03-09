@@ -12,7 +12,7 @@ slider.oninput = function() {
     output.innerHTML = this.value;
 }
 
-function getPassword(min, max) {
+function generationPassword(min, max) {
     let random = Math.floor(Math.random() * (max - min + 1) + min);
 
     let ArrayOfString = random.toString(36).split();
@@ -27,24 +27,24 @@ function getPassword(min, max) {
 
 generation.onclick = function() {
     if (output.innerHTML == 12) {
-        result.textContent = getPassword(1e17, 1e18);
+        result.textContent = generationPassword(1e17, 1e18);
     } else if (output.innerHTML == 11) {
-        result.textContent = getPassword(1e15, 1e16);
+        result.textContent = generationPassword(1e15, 1e16);
     } else if (output.innerHTML == 10) {
-        result.textContent = getPassword(1e13, 1e14);
+        result.textContent = generationPassword(1e13, 1e14);
     } else if (output.innerHTML == 9) {
-        result.textContent = getPassword(1e12, 1e13);
+        result.textContent = generationPassword(1e12, 1e13);
     } else if (output.innerHTML == 8) {
-        result.textContent = getPassword(1e11, 1e12);
+        result.textContent = generationPassword(1e11, 1e12);
     } else if (output.innerHTML == 7) {
-        result.textContent = getPassword(1e9, 1e10);
+        result.textContent = generationPassword(1e9, 1e10);
     } else if (output.innerHTML == 6) {
-        result.textContent = getPassword(1e8, 1e9);
+        result.textContent = generationPassword(1e8, 1e9);
     } else if (output.innerHTML == 5) {
-        result.textContent = getPassword(1e6, 1e7);
+        result.textContent = generationPassword(1e6, 1e7);
     } else if (output.innerHTML == 4) {
-        result.textContent = getPassword(1e5, 1e6);
+        result.textContent = generationPassword(1e5, 1e6);
     } else if (output.innerHTML == 3) {
-        result.textContent = getPassword(1e3, 1e4);
+        result.textContent = generationPassword(1e3, 1e4);
     }
 }
