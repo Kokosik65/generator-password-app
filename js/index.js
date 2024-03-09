@@ -1,5 +1,14 @@
-const { app, BrowserWindow, ipcMain } = require('electron/main')
+const { app, BrowserWindow, ipcMain, autoUpdater } = require('electron/main')
 const path = require('node:path');
+
+const server = 'https://update.electronjs.org'
+const feed = `${server}/OWNER/REPO/${process.platform}-${process.arch}/${app.getVersion()}`
+
+autoUpdater.setFeedURL(feed)
+
+setInterval(() => {
+    autoUpdater.checkForUpdates()
+}, 10 * 60 * 1000)
 
 const createWindow = () => {
     const win = new BrowserWindow({
