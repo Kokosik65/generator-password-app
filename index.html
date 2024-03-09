@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>генератор паролей</title>
+    <script src="js/index.js" defer></script>
+    <script src="js/generator.js" defer></script>
+    <script src="js/render.js" defer></script>
+    <script src="js/preload.js" defer></script>
+</head>
+
+<body>
+    <div class="block">
+        <h1 class="header">Генератор пароля</h1>
+        <input type="range" min="3" max="12" step="1" value="8" class="slider" id="myRange">
+        <p id="demo">0</p>
+        <button id="generation">сгенерировать</button>
+        <p class="res" id="result">0</p>
+        <p id="lengthPassword">0</p>
+    </div>
+</body>
+
+</html>

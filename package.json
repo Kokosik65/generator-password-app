@@ -1,0 +1,23 @@
+{
+    "name": "generator-passsword-app",
+    "version": "1.0.0",
+    "description": "generator",
+    "main": "js/index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Kokosik65/ge.git"
+    },
+    "author": "frdgseb",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Kokosik65/ge/issues"
+    },
+    "homepage": "https://github.com/Kokosik65/ge#readme",
+    "devDependencies": {
+        "electron": "^29.1.1"
+    }
+}
