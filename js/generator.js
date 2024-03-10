@@ -1,5 +1,7 @@
 const generation = document.getElementById('generation');
 const result = document.getElementById('result');
+const copyButton = document.getElementById('copyButton');
+const copied = document.getElementById('copied');
 
 //slider 
 const slider = document.getElementById("myRange");
@@ -45,4 +47,20 @@ generation.onclick = function() {
     } else if (output.innerHTML == 3) {
         result.textContent = generationPassword(1e3, 1e4);
     }
+};
+
+const copyToClipbBoard = () => {
+    const copyContent = result;
+    navigator.clipboard.writeText(copyContent.innerText);
+    copyButton.innerHTML = "copied";
+}
+
+copyButton.onclick = () => {
+    copyToClipbBoard();
+
+
+
+    setTimeout(() => {
+        copyButton.innerHTML = "copy";
+    }, 700);
 }
